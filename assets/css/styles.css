@@ -13,7 +13,11 @@ body {
 /* Container for the video */
 .container {
     width: 90%; /* 90% of the page width */
-    max-width: 1200px; /* Optional: Set a maximum width */
+    height: 90vh; /* 90% of the viewport height */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
     text-align: center; /* Center the heading */
 }
 
@@ -21,11 +25,10 @@ body {
 .video-container {
     position: relative;
     width: 100%; /* Take up full width of the container */
-    padding-top: 56.25%; /* 16:9 aspect ratio (height = 56.25% of width) */
+    height: 100%; /* Take up full height of the container */
     border: 10px solid #333; /* Add a border */
     border-radius: 10px; /* Optional: Add rounded corners */
     overflow: hidden; /* Ensure the video stays within the container */
-    margin: 0 auto; /* Center the video container horizontally */
 }
 
 /* Iframe (video) styling */
